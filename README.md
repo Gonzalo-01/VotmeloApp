@@ -13,9 +13,15 @@
 
 ## 📸 Capturas de pantalla
 
-| ![image1](https://github.com/user-attachments/assets/58391f06-1e0d-4466-9ede-9d35af54dbe6) | ![image2](https://github.com/user-attachments/assets/801ed347-87df-4045-9733-5144a7492209) |
-|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| ![image3](https://github.com/user-attachments/assets/bf079a42-56e7-48ba-9c20-771774668ab5) | ![image4](https://github.com/user-attachments/assets/c5d9a342-5c10-42ab-96a9-ae2abc11dc67) |
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/58391f06-1e0d-4466-9ede-9d35af54dbe6" width="45%">
+  <img src="https://github.com/user-attachments/assets/801ed347-87df-4045-9733-5144a7492209" width="45%">
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bf079a42-56e7-48ba-9c20-771774668ab5" width="45%">
+  <img src="https://github.com/user-attachments/assets/c5d9a342-5c10-42ab-96a9-ae2abc11dc67" width="45%">
+</p>
 
 
 ## 🛠️ Tecnologías utilizadas
