@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema de la aplicación-->
+    <style name="Base.Theme.Prueba3" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+
+    <style name="Theme.Prueba3" parent="Base.Theme.Prueba3" />
+</resources>

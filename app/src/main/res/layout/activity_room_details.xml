@@ -1,0 +1,125 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RoomDetailsActivity">
+
+    <!-- Nombre de la sala -->
+    <TextView
+        android:id="@+id/room_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre de la Sala"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp" />
+
+    <!-- Nombre del jugador -->
+    <TextView
+        android:id="@+id/player_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Jugador"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/room_name_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Número de jugadores actuales en la sala -->
+    <TextView
+        android:id="@+id/current_players_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jugadores actuales: 0"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/player_name_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Lista de canciones con ScrollView para que sea desplazable -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/songs_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/current_players_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/music_player_layout"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Layout para buscar canciones -->
+    <LinearLayout
+        android:id="@+id/song_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:id="@+id/song_search_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Buscar canción"
+            android:inputType="text"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/add_song_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar"
+            android:backgroundTint="@color/coral"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <!-- Reproductor de música -->
+    <LinearLayout
+        android:id="@+id/music_player_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/song_search_layout"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <!-- Nombre de la canción actual -->
+        <TextView
+            android:id="@+id/current_song_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Canción actual: "
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/current_players_text_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center" />
+
+        <!-- Controles de reproducción -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <!-- Botón Pausa -->
+            <ImageButton
+                android:id="@+id/pause_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/play_pause"
+                android:contentDescription="Pausa"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

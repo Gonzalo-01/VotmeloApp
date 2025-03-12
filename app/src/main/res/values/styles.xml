@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo para los números del NumberPicker -->
+    <style name="CustomNumberPickerStyle">
+        <item name="android:textColor">#FFFFFF</item> <!-- Blanco para los números -->
+        <item name="android:textSize">18sp</item> <!-- Tamaño del texto -->
+    </style>
+
+    <style name="CustomTextInputLayoutStyle">
+        <item name="boxStrokeColor">?attr/colorControlNormal</item> <!-- Color del borde cuando no está seleccionado -->
+        <item name="boxStrokeErrorColor">?attr/colorControlActivated</item> <!-- Color del borde en error (opcional) -->
+        <item name="hintTextColor">#B0B0B0</item> <!-- Color del hint -->
+        <item name="boxBackgroundMode">outline</item> <!-- Estilo de borde (outline o filled) -->
+    </style>
+
+</resources>

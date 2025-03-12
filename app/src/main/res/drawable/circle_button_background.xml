@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#00000000" /> <!-- Fondo transparente -->
+    <stroke android:color="@color/turquesa" android:width="4dp"/> <!-- Borde turquesa -->
+    <corners android:radius="100dp" /> <!-- Borde redondeado -->
+    <padding android:left="16dp" android:top="16dp" android:right="16dp" android:bottom="16dp"/> <!-- Espaciado interno -->
+</shape>
